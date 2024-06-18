@@ -6,13 +6,16 @@ import { Button, View, XStack } from 'tamagui';
 
 import { HeaderButton } from '../../components/HeaderButton';
 
-import { Container } from '~/tamagui.config';
+import { Container, WhiteText } from '~/tamagui.config';
+import { Pressable } from 'react-native';
 
 const DrawerLayout = () => (
   <Drawer
     screenOptions={{
+      headerStyle: {backgroundColor: '#3a3a59'},
       drawerPosition: 'right',
-      headerLeft: () => <></>,
+      drawerStyle: {backgroundColor: '#3a3a59'},
+      headerLeft: () => <Link href={'/'} style={{paddingLeft: 16}}><WhiteText fontWeight={'bold'} fontSize={18}>Nativshark</WhiteText></Link>,
       headerRight: () => (
         <XStack flex={1} alignItems="center">
           <Button transparent disabled size="$3">
@@ -26,25 +29,26 @@ const DrawerLayout = () => (
     <Drawer.Screen
       name="index"
       options={{
-        headerTitle: 'Nativshark',
-        headerTitleAlign: 'left',
+        headerTitle: '',
         drawerLabel: 'Home',
-        drawerIcon: ({ size, color }) => <Ionicons name="home-outline" size={size} color={color} />,
+        drawerIcon: ({ size, color }) => <Ionicons name="home-outline" size={size} color={'white'} />,
       }}
     />
     <Drawer.Screen
       name="(tabs)"
       options={{
         headerTitle: 'Tabs',
+        headerTitleStyle: {color: 'white'},
+        drawerLabelStyle: {color: 'white'},
         drawerLabel: 'Tabs',
         drawerIcon: ({ size, color }) => (
-          <MaterialIcons name="border-bottom" size={size} color={color} />
+          <MaterialIcons name="border-bottom" size={size} color={'white'} />
         ),
-        headerRight: () => (
-          <Link href="/modal" asChild>
-            <HeaderButton />
-          </Link>
-        ),
+        // headerRight: () => (
+        //   <Link href="/modal" asChild>
+        //     <HeaderButton />
+        //   </Link>
+        // ),
       }}
     />
   </Drawer>
