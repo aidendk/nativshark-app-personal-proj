@@ -14,6 +14,7 @@ const CoreStudies = () => {
       borderRadius="$5"
       borderWidth={2}
       backgroundColor="#2c2c44"
+      mx={2}
       p={0}>
       <YStack py={12} rowGap={4}>
         <WhiteText color="$gray11" fontWeight="bold" fontSize="$2">
@@ -22,26 +23,26 @@ const CoreStudies = () => {
         <WhiteText fontSize="$2">Learn new Japanese to continue your study journey.</WhiteText>
       </YStack>
       <XStack backgroundColor="#3a3a59" p={12}>
-        <YStack flex={0.75} rowGap="$1">
+        <YStack rowGap="$1" flex={1}>
           <XStack>
             <WhiteText fontWeight="bold" fontSize="$2">
               Tomorrow's Reviews:
             </WhiteText>
             <Text color="green" fontSize="$2">
-              {' '}
+              {'  '}
               79
             </Text>
             <WhiteText fontSize="$2">/ 100</WhiteText>
           </XStack>
           <XStack>
             <XStack>
-              <WhiteText fontSize={10}>
-                You're under your review threshold for tomorrow. Feel free to study new Units.
+              <WhiteText fontSize={10} fontStyle="italic" letterSpacing="$3">
+                You're under your review threshold for {`\n`}tomorrow. Feel free to study new Units.
               </WhiteText>
             </XStack>
           </XStack>
         </YStack>
-        <YStack flex={0.5} alignItems="flex-end" alignSelf="center">
+        <YStack alignSelf="center">
           <WhiteText textAlign="center" fontSize="$2">
             Adjust {'\n'}Threshold
           </WhiteText>

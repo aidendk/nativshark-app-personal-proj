@@ -15,6 +15,7 @@ import {
 
 import CoreStudies from './CoreStudies';
 import { EditScreenInfo } from './EditScreenInfo';
+import ExtraCredit from './ExtraCredit';
 import TodayStudies from './TodayStudies';
 
 import { Container, Title, WhiteText } from '~/tamagui.config';
@@ -49,6 +50,12 @@ export const ScreenContent = ({ title, path, children }: ScreenContentProps) => 
         <TodayStudies />
 
         <CoreStudies />
+        <View pt={24}>
+          <WhiteText fontWeight="bold" fontSize="$5">
+            Extra Credit
+          </WhiteText>
+        </View>
+        <ExtraCredit />
       </Container>
     </ScrollView>
   );
