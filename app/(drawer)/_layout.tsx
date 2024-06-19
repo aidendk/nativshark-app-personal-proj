@@ -2,20 +2,26 @@ import { Ionicons, MaterialIcons, AntDesign } from '@expo/vector-icons';
 import { DrawerToggleButton } from '@react-navigation/drawer';
 import { Link } from 'expo-router';
 import { Drawer } from 'expo-router/drawer';
+import { Pressable } from 'react-native';
 import { Button, View, XStack } from 'tamagui';
 
 import { HeaderButton } from '../../components/HeaderButton';
 
 import { Container, WhiteText } from '~/tamagui.config';
-import { Pressable } from 'react-native';
 
 const DrawerLayout = () => (
   <Drawer
     screenOptions={{
-      headerStyle: {backgroundColor: '#3a3a59'},
+      headerStyle: { backgroundColor: '#3a3a59' },
       drawerPosition: 'right',
-      drawerStyle: {backgroundColor: '#3a3a59'},
-      headerLeft: () => <Link href={'/'} style={{paddingLeft: 16}}><WhiteText fontWeight={'bold'} fontSize={18}>Nativshark</WhiteText></Link>,
+      drawerStyle: { backgroundColor: '#3a3a59' },
+      headerLeft: () => (
+        <Link href="/" style={{ paddingLeft: 16 }}>
+          <WhiteText fontWeight="bold" fontSize={18}>
+            Nativshark
+          </WhiteText>
+        </Link>
+      ),
       headerRight: () => (
         <XStack flex={1} alignItems="center">
           <Button transparent disabled size="$3">
@@ -31,18 +37,18 @@ const DrawerLayout = () => (
       options={{
         headerTitle: '',
         drawerLabel: 'Home',
-        drawerIcon: ({ size, color }) => <Ionicons name="home-outline" size={size} color={'white'} />,
+        drawerIcon: ({ size, color }) => <Ionicons name="home-outline" size={size} color="white" />,
       }}
     />
     <Drawer.Screen
       name="(tabs)"
       options={{
         headerTitle: 'Tabs',
-        headerTitleStyle: {color: 'white'},
-        drawerLabelStyle: {color: 'white'},
+        headerTitleStyle: { color: 'white' },
+        drawerLabelStyle: { color: 'white' },
         drawerLabel: 'Tabs',
         drawerIcon: ({ size, color }) => (
-          <MaterialIcons name="border-bottom" size={size} color={'white'} />
+          <MaterialIcons name="border-bottom" size={size} color="white" />
         ),
         // headerRight: () => (
         //   <Link href="/modal" asChild>
