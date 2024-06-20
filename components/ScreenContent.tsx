@@ -13,6 +13,7 @@ import {
   ScrollView,
 } from 'tamagui';
 
+import Activity from './Activity';
 import CoreStudies from './CoreStudies';
 import { EditScreenInfo } from './EditScreenInfo';
 import ExtraCredit from './ExtraCredit';
@@ -56,6 +57,12 @@ export const ScreenContent = ({ title, path, children }: ScreenContentProps) => 
           </WhiteText>
         </View>
         <ExtraCredit />
+        <View pt={24}>
+          <WhiteText fontWeight="bold" fontSize="$5">
+            Activity
+          </WhiteText>
+        </View>
+        <Activity />
       </Container>
     </ScrollView>
   );
