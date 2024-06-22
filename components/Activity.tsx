@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from 'react-native';
 import { XStack, YStack, View, Separator, ScrollView } from 'tamagui';
 
 import { Container, WhiteText } from '~/tamagui.config';
