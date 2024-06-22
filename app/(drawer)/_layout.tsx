@@ -5,9 +5,7 @@ import { Drawer } from 'expo-router/drawer';
 import { Pressable } from 'react-native';
 import { Button, View, XStack } from 'tamagui';
 
-import { HeaderButton } from '../../components/HeaderButton';
-
-import { Container, WhiteText } from '~/tamagui.config';
+import { WhiteText } from '~/tamagui.config';
 
 const DrawerLayout = () => (
   <Drawer
@@ -15,6 +13,7 @@ const DrawerLayout = () => (
       headerStyle: { backgroundColor: '#3a3a59' },
       drawerPosition: 'right',
       drawerStyle: { backgroundColor: '#3a3a59' },
+      headerShadowVisible: false,
       headerLeft: () => (
         <Link href="/" style={{ paddingLeft: 16 }}>
           <WhiteText fontWeight="bold" fontSize={18}>
@@ -25,9 +24,9 @@ const DrawerLayout = () => (
       headerRight: () => (
         <XStack flex={1} alignItems="center">
           <Button transparent disabled size="$3">
-            <AntDesign name="search1" style={{ fontSize: 18 }} />
+            <AntDesign name="search1" color="white" style={{ fontSize: 18 }} />
           </Button>
-          <DrawerToggleButton />
+          <DrawerToggleButton tintColor="#fff" />
         </XStack>
       ),
       swipeEnabled: false,
@@ -36,6 +35,8 @@ const DrawerLayout = () => (
       name="index"
       options={{
         headerTitle: '',
+        headerTitleStyle: { color: 'white' },
+        drawerLabelStyle: { color: 'white' },
         drawerLabel: 'Home',
         drawerIcon: ({ size, color }) => <Ionicons name="home-outline" size={size} color="white" />,
       }}

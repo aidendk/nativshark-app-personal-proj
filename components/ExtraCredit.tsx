@@ -1,8 +1,6 @@
 import { AntDesign, Feather } from '@expo/vector-icons';
-import { Link } from 'expo-router';
 import React from 'react';
-import { Text, Pressable } from 'react-native';
-import { Separator, XStack, YStack, View, createTokens } from 'tamagui';
+import { Separator, XStack, YStack } from 'tamagui';
 
 import { Container, WhiteText } from '~/tamagui.config';
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
-import { Button, Card, XStack, YStack, Text } from 'tamagui';
+import { XStack, YStack, Text } from 'tamagui';
 
 import { Container, WhiteText } from '~/tamagui.config';
 
@@ -28,11 +27,11 @@ const CoreStudies = () => {
             <WhiteText fontWeight="bold" fontSize="$2">
               Tomorrow's Reviews:
             </WhiteText>
-            <Text color="green" fontSize="$2">
+            <Text color="#59b27f" fontSize="$2">
               {'  '}
               79
             </Text>
-            <WhiteText fontSize="$2">/ 100</WhiteText>
+            <WhiteText fontSize="$2"> / 100</WhiteText>
           </XStack>
           <XStack>
             <XStack>
