@@ -21,16 +21,16 @@ const TodayStudies = () => {
   return (
     <Container flex={1} alignItems="center" rowGap="$2">
       <XStack alignItems="center" columnGap="$4">
-        <AntDesign name="checkcircle" color="green" size={32} />
+        <AntDesign name="checkcircle" color="#66cc91" size={32} />
         <YStack flex={1}>
           <WhiteText fontSize="$2">Reviews completed and Days Studied updated</WhiteText>
         </YStack>
       </XStack>
       <Divider />
       <XStack alignItems="center" columnGap="$4">
-        <FontAwesome5 name="dot-circle" color="gray" size={32} />
+        <FontAwesome5 name="dot-circle" color="#9d87b5" size={32} />
         <YStack flex={1}>
-          <WhiteText fontWeight="bold" fontSize={9} color="$gray11">
+          <WhiteText fontWeight="bold" fontSize={9} color="#a6a6bf">
             PHASE TWO
           </WhiteText>
           <WhiteText fontSize="$5" fontWeight="bold">
@@ -40,7 +40,7 @@ const TodayStudies = () => {
       </XStack>
       <Divider />
       <XStack alignItems="center" columnGap="$4">
-        <Entypo name="book" size={32} color="gray" />
+        <Entypo name="book" size={32} color="#9d87b5" />
         <YStack flex={1}>
           <WhiteText fontWeight="bold" fontSize={9}>
             GRAMMAR
@@ -50,7 +50,7 @@ const TodayStudies = () => {
       </XStack>
       <Divider />
       <XStack alignItems="center" columnGap="$4">
-        <FontAwesome name="pencil-square" size={36} color="gray" />
+        <FontAwesome name="pencil-square" size={36} color="#9d87b5" />
         <YStack flex={1}>
           <WhiteText fontWeight="bold" fontSize={9}>
             KANJI
@@ -60,7 +60,7 @@ const TodayStudies = () => {
       </XStack>
       <Divider />
       <XStack alignItems="center" columnGap="$4">
-        <MaterialCommunityIcons name="format-letter-case" size={32} color="gray" />
+        <MaterialCommunityIcons name="format-letter-case" size={32} color="#9d87b5" />
         <YStack flex={1}>
           <WhiteText fontWeight="bold" fontSize={9}>
             VOCABULARY
@@ -70,7 +70,7 @@ const TodayStudies = () => {
       </XStack>
       <Divider />
       <XStack alignItems="center" columnGap="$4">
-        <MaterialCommunityIcons name="dots-horizontal-circle" size={32} color="gray" />
+        <MaterialCommunityIcons name="dots-horizontal-circle" size={32} color="#9d87b5" />
         <YStack flex={1}>
           <WhiteText fontWeight="bold" fontSize={9}>
             DIALOGUE

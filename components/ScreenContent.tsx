@@ -3,6 +3,7 @@ import { Separator, Button, View, ScrollView } from 'tamagui';
 import Activity from './Activity';
 import CoreStudies from './CoreStudies';
 import ExtraCredit from './ExtraCredit';
+import MyPath from './MyPath';
 import StatsCard from './StatsCard';
 import TodayStudies from './TodayStudies';
 
@@ -13,7 +14,7 @@ export const ScreenContent = () => {
     <ScrollView backgroundColor="#2c2c44">
       <Container pt="$8" backgroundColor="#2c2c44" px="$3">
         <View rowGap="$1">
-          <WhiteText color="$gray11" fontWeight="bold">
+          <WhiteText color="#a6a6bf" fontWeight="bold">
             {new Date().toDateString()}
           </WhiteText>
           <WhiteText fontSize="$9" fontWeight="bold">
@@ -50,6 +51,12 @@ export const ScreenContent = () => {
           </WhiteText>
         </View>
         <StatsCard />
+        <View pt={24}>
+          <WhiteText fontWeight="bold" fontSize="$5">
+            My Path
+          </WhiteText>
+        </View>
+        <MyPath />
       </Container>
     </ScrollView>
   );

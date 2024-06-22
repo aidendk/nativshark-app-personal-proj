@@ -17,7 +17,7 @@ const CoreStudies = () => {
       mx={2}
       p={0}>
       <YStack py={12} rowGap={4}>
-        <WhiteText color="$gray11" fontWeight="bold" fontSize="$2">
+        <WhiteText color="#a6a6bf" fontWeight="bold" fontSize="$2">
           Complete today's studies
         </WhiteText>
         <WhiteText fontSize="$2">Learn new Japanese to continue your study journey.</WhiteText>

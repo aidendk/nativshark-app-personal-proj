@@ -11,36 +11,36 @@ const StatsCard = () => {
           <WhiteText fontSize="$6" fontWeight="bold">
             537
           </WhiteText>
-          <WhiteText fontSize={10} color="$gray11" fontWeight="bold">
+          <WhiteText fontSize={10} color="#a6a6bf" fontWeight="bold">
             Days Studied (Bonfire)
           </WhiteText>
         </View>
         <View py="$4" flexShrink={1} alignItems="center" rowGap="$2">
           <XStack columnGap="$3">
             <WhiteText fontSize="$6" fontWeight="bold">
-              12<Text color="$gray11">d</Text>
+              12<Text color="#a6a6bf">d</Text>
             </WhiteText>
             <WhiteText fontSize="$6" fontWeight="bold">
-              23<Text color="$gray11">h</Text>
+              23<Text color="#a6a6bf">h</Text>
             </WhiteText>
             <WhiteText fontSize="$6" fontWeight="bold">
-              31<Text color="$gray11">m</Text>
+              31<Text color="#a6a6bf">m</Text>
             </WhiteText>
           </XStack>
-          <WhiteText fontSize={10} color="$gray11" fontWeight="bold">
+          <WhiteText fontSize={10} color="#a6a6bf" fontWeight="bold">
             Time Spent
           </WhiteText>
         </View>
         <View py="$4" flexShrink={1} alignItems="center" rowGap="$2">
           <XStack columnGap="$3">
             <WhiteText fontSize="$6" fontWeight="bold">
-              34<Text color="$gray11">m</Text>
+              34<Text color="#a6a6bf">m</Text>
             </WhiteText>
             <WhiteText fontSize="$6" fontWeight="bold">
-              48<Text color="$gray11">s</Text>
+              48<Text color="#a6a6bf">s</Text>
             </WhiteText>
           </XStack>
-          <WhiteText fontSize={10} color="$gray11" fontWeight="bold">
+          <WhiteText fontSize={10} color="#a6a6bf" fontWeight="bold">
             Average Per Day
           </WhiteText>
         </View>

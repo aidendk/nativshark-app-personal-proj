@@ -19,12 +19,14 @@ const Activity = () => {
           <XStack columnGap="$2" py="$4" justifyContent="space-between">
             <XStack alignItems="center" columnGap="$3" flexShrink={1}>
               <View
-                backgroundColor="green"
+                backgroundColor="#66cc91"
                 p="$1.5"
                 borderRadius="$1"
                 alignItems="center"
                 width={75}>
-                <WhiteText fontSize="$1">Dialogue</WhiteText>
+                <WhiteText fontSize={10} fontWeight="bold">
+                  Dialogue
+                </WhiteText>
               </View>
               <YStack flexShrink={1}>
                 <WhiteText fontSize="$1">
@@ -33,7 +35,7 @@ const Activity = () => {
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -42,19 +44,21 @@ const Activity = () => {
           <XStack columnGap="$2" py="$4" justifyContent="space-between">
             <XStack alignItems="center" columnGap="$3">
               <View
-                backgroundColor="blue"
+                backgroundColor="#375e97"
                 p="$1.5"
                 borderRadius="$1"
                 alignItems="center"
                 width={75}>
-                <WhiteText fontSize="$1">Flashcard</WhiteText>
+                <WhiteText fontSize={10} fontWeight="bold">
+                  Flashcard
+                </WhiteText>
               </View>
               <YStack flexShrink={1}>
                 <WhiteText fontSize="$1">You reviewed 96 flashcards.</WhiteText>
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -67,19 +71,21 @@ const Activity = () => {
               flexShrink={1}
               justifyContent="space-between">
               <View
-                backgroundColor="#f63c7e"
+                backgroundColor="#e5428b"
                 p="$1.5"
                 borderRadius="$1"
                 alignItems="center"
                 width={75}>
-                <WhiteText fontSize="$1">Lesson</WhiteText>
+                <WhiteText fontSize={10} fontWeight="bold">
+                  Lesson
+                </WhiteText>
               </View>
               <YStack flexShrink={1}>
                 <WhiteText fontSize="$1">恐怖症: Phobias</WhiteText>
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -102,7 +108,7 @@ const Activity = () => {
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -123,7 +129,7 @@ const Activity = () => {
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -148,7 +154,7 @@ const Activity = () => {
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -171,7 +177,7 @@ const Activity = () => {
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -192,7 +198,7 @@ const Activity = () => {
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>
@@ -217,7 +223,7 @@ const Activity = () => {
               </YStack>
             </XStack>
             <XStack alignItems="center">
-              <WhiteText fontSize="$1" color="$gray11" fontStyle="italic">
+              <WhiteText fontSize="$1" color="#a6a6bf" fontStyle="italic">
                 2 hours ago
               </WhiteText>
             </XStack>

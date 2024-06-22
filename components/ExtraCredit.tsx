@@ -15,7 +15,7 @@ const ExtraCredit = () => {
             <AntDesign name="star" size={24} color="white" />
             <YStack px={6} rowGap="$1.5" flexShrink={1}>
               <WhiteText fontSize="$5">Custom Flashcards</WhiteText>
-              <WhiteText color="$gray11" fontSize="$3">
+              <WhiteText color="#a6a6bf" fontSize="$3">
                 Click here to start reviewing your custom flashcards.
               </WhiteText>
             </YStack>
@@ -32,11 +32,11 @@ const ExtraCredit = () => {
             <YStack px={6} rowGap="$1.5" flexShrink={1}>
               <WhiteText fontSize="$5">
                 Native Materials{'  '}
-                <WhiteText fontSize="$2" fontStyle="italic" color="$gray11">
+                <WhiteText fontSize="$2" fontStyle="italic" color="#a6a6bf">
                   (not enabled)
                 </WhiteText>
               </WhiteText>
-              <WhiteText color="$gray11" fontSize="$3">
+              <WhiteText color="#a6a6bf" fontSize="$3">
                 Click here to set a native materials goal.
               </WhiteText>
             </YStack>
@@ -52,9 +52,9 @@ const ExtraCredit = () => {
             <AntDesign name="star" size={24} color="white" />
             <YStack px={6} rowGap="$1.5" flexShrink={1}>
               <WhiteText fontSize="$5">Shadowing</WhiteText>
-              <WhiteText color="$gray11" fontSize="$3">
+              <WhiteText color="#a6a6bf" fontSize="$3">
                 You have{' '}
-                <WhiteText color="$gray11" fontWeight="bold">
+                <WhiteText color="#a6a6bf" fontWeight="bold">
                   15 minutes
                 </WhiteText>{' '}
                 remaining.
@@ -73,11 +73,11 @@ const ExtraCredit = () => {
             <YStack px={6} rowGap="$1.5" flexShrink={1}>
               <WhiteText fontSize="$5">
                 Speaking Practice{'  '}
-                <WhiteText fontSize="$2" fontStyle="italic" color="$gray11">
+                <WhiteText fontSize="$2" fontStyle="italic" color="#a6a6bf">
                   (not enabled)
                 </WhiteText>
               </WhiteText>
-              <WhiteText color="$gray11" fontSize="$3">
+              <WhiteText color="#a6a6bf" fontSize="$3">
                 Click here to set a speaking practice goal.
               </WhiteText>
             </YStack>
