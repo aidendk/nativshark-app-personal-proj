@@ -1,33 +1,14 @@
-import { AntDesign, Entypo } from '@expo/vector-icons';
-import {
-  YStack,
-  H2,
-  Separator,
-  Theme,
-  Header,
-  H1,
-  Button,
-  View,
-  XStack,
-  useTheme,
-  ScrollView,
-} from 'tamagui';
+import { Separator, Button, View, ScrollView } from 'tamagui';
 
 import Activity from './Activity';
 import CoreStudies from './CoreStudies';
-import { EditScreenInfo } from './EditScreenInfo';
 import ExtraCredit from './ExtraCredit';
+import StatsCard from './StatsCard';
 import TodayStudies from './TodayStudies';
 
-import { Container, Title, WhiteText } from '~/tamagui.config';
+import { Container, WhiteText } from '~/tamagui.config';
 
-type ScreenContentProps = {
-  title: string;
-  path: string;
-  children?: React.ReactNode;
-};
-
-export const ScreenContent = ({ title, path, children }: ScreenContentProps) => {
+export const ScreenContent = () => {
   return (
     <ScrollView backgroundColor="#2c2c44">
       <Container pt="$8" backgroundColor="#2c2c44" px="$3">
@@ -40,7 +21,7 @@ export const ScreenContent = ({ title, path, children }: ScreenContentProps) => 
           </WhiteText>
         </View>
         <View mt="$3">
-          <Button size="$3" backgroundColor="#f63c7e">
+          <Button size="$3" backgroundColor="#f63c7e" pressStyle={{ backgroundColor: '#ac2a58' }}>
             <WhiteText fontWeight="bold" fontSize="$2">
               Study Now
             </WhiteText>
@@ -63,6 +44,12 @@ export const ScreenContent = ({ title, path, children }: ScreenContentProps) => 
           </WhiteText>
         </View>
         <Activity />
+        <View pt={24}>
+          <WhiteText fontWeight="bold" fontSize="$5">
+            Stats
+          </WhiteText>
+        </View>
+        <StatsCard />
       </Container>
     </ScrollView>
   );

@@ -1,0 +1,59 @@
+import React from 'react';
+import { YStack, View, Text, XStack, Button } from 'tamagui';
+
+import { Container, WhiteText } from '~/tamagui.config';
+
+const StatsCard = () => {
+  return (
+    <Container flex={1} rowGap="$4" mt={12} backgroundColor="#3a3a59" borderRadius="$5" mx={2}>
+      <YStack alignItems="center">
+        <View py="$4" flexShrink={1} alignItems="center" rowGap="$2">
+          <WhiteText fontSize="$6" fontWeight="bold">
+            537
+          </WhiteText>
+          <WhiteText fontSize={10} color="$gray11" fontWeight="bold">
+            Days Studied (Bonfire)
+          </WhiteText>
+        </View>
+        <View py="$4" flexShrink={1} alignItems="center" rowGap="$2">
+          <XStack columnGap="$3">
+            <WhiteText fontSize="$6" fontWeight="bold">
+              12<Text color="$gray11">d</Text>
+            </WhiteText>
+            <WhiteText fontSize="$6" fontWeight="bold">
+              23<Text color="$gray11">h</Text>
+            </WhiteText>
+            <WhiteText fontSize="$6" fontWeight="bold">
+              31<Text color="$gray11">m</Text>
+            </WhiteText>
+          </XStack>
+          <WhiteText fontSize={10} color="$gray11" fontWeight="bold">
+            Time Spent
+          </WhiteText>
+        </View>
+        <View py="$4" flexShrink={1} alignItems="center" rowGap="$2">
+          <XStack columnGap="$3">
+            <WhiteText fontSize="$6" fontWeight="bold">
+              34<Text color="$gray11">m</Text>
+            </WhiteText>
+            <WhiteText fontSize="$6" fontWeight="bold">
+              48<Text color="$gray11">s</Text>
+            </WhiteText>
+          </XStack>
+          <WhiteText fontSize={10} color="$gray11" fontWeight="bold">
+            Average Per Day
+          </WhiteText>
+        </View>
+        <View py="$4" flexShrink={1} alignItems="center" rowGap="$2">
+          <Button size="$3" backgroundColor="#f63c7e" pressStyle={{ backgroundColor: '#ac2a58' }}>
+            <WhiteText fontWeight="bold" fontSize="$2">
+              More Stats
+            </WhiteText>
+          </Button>
+        </View>
+      </YStack>
+    </Container>
+  );
+};
+
+export default StatsCard;

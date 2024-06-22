@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <>
       <Stack.Screen options={{ title: 'Tab Two' }} />
-      <ScreenContent path="app/(drawer)/(tabs)/two.tsx" title="Tab Two" />
     </>
   );
 }
